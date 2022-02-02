@@ -1,0 +1,44 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.title {
+    color: #46494c;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-size: 40px;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    padding-left: 300px;
+}
+.row-radio-buttons-group {
+    gap: 50px;
+}
+.fieldset{
+    color: #46494c;
+}
+.operations {
+    display: flex;
+    flex-direction: row;
+}
+.crudOperations {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding-left: 20px;
+}
+.space {
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    background-color: #4c5c68;
+}
+.update{
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+
+  react:
+    image: frontend_a2
+    ports:
+      - "3000:3000"
+

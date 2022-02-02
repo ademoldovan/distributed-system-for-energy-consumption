@@ -1,0 +1,4 @@
+model\BaselineDto.class
+controller\Controller.class
+main\Main.class
+model\EnergyConsumptionDto.class

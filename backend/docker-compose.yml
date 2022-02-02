@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+
+  tomcat-db-api:
+    image: backend_a2
+    ports:
+      - "8080:8080"
+

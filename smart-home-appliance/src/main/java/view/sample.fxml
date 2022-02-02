@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="637.0" prefWidth="918.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+    <children>
+        <Pane layoutX="5.0" layoutY="6.0" prefHeight="626.0" prefWidth="909.0" style="-fx-background-color: ccffcc;">
+            <children>
+                <Text fill="#35a89e" layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Device application" textAlignment="CENTER" wrappingWidth="163.1328125">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <Button layoutX="14.0" layoutY="106.0" mnemonicParsing="false" onMouseClicked="#viewHistoricalEnergy" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #35a89e;" text="historical energy" />
+                <TextField fx:id="numberOfDays" layoutX="137.0" layoutY="105.0" prefHeight="27.0" prefWidth="50.0" />
+                <Button layoutX="14.0" layoutY="153.0" mnemonicParsing="false" onMouseClicked="#viewBaseline" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #35a89e;" text="baseline" />
+                <Button layoutX="14.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #35a89e;" text="select program" />
+                <TextField layoutX="137.0" layoutY="199.0" prefHeight="27.0" prefWidth="50.0" />
+                <Button layoutX="14.0" layoutY="248.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="117.0" style="-fx-background-color: #35a89e;" text="best start time in the next day" textAlignment="CENTER" wrapText="true" />
+                <LineChart fx:id="baselineChart" layoutX="232.0" layoutY="100.0" prefHeight="400.0" prefWidth="653.0">
+                    <xAxis>
+                        <CategoryAxis fx:id="hours" animated="false" label="time(h)" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis fx:id="average" animated="false" label="energy" side="LEFT" />
+                    </yAxis>
+                </LineChart>
+                <Text fx:id="date" layoutX="771.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="dat" textAlignment="RIGHT" wrappingWidth="99.13671875" />
+                <Label fx:id="time" layoutX="736.0" layoutY="28.0" prefHeight="17.0" prefWidth="71.0" />
+                <Text layoutX="14.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select device id:" wrappingWidth="99.13671875" />
+                <TextField fx:id="deviceId" layoutX="106.0" layoutY="56.0" prefHeight="25.0" prefWidth="50.0" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

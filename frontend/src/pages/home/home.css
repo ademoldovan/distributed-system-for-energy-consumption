@@ -1,0 +1,34 @@
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:  white;
+    height: 5vh;
+}
+.titlu{
+    font-size: 27px;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+.body{
+    background-image: url("bulb.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-color: blue;
+    height: 100vh;
+}
+.footer{
+    background-color: #cccccc ;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.useEnergy{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 580px;
+}
